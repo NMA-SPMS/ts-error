@@ -1,0 +1,65 @@
+{
+  "name": "@spms-apps/ts-error",
+  "version": "0.0.1",
+  "description": "Package to handle errors.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest ./src/tests --coverage --config ./jest.config.json",
+    "build": "rm -rf ./lib && tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "custom-error"
+  ],
+  "author": {
+    "name": "NMA-SPMS",
+    "email": "nma@spms.min-saude.pt"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.18",
+    "@types/uuid": "^3.4.4",
+    "commitizen": "^3.0.5",
+    "commitplease": "^3.2.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.16.1",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.4"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "chore",
+      "merge"
+    ],
+    "scope": "\\S+.*"
+  }
+}

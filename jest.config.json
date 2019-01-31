@@ -1,0 +1,18 @@
+{
+  "collectCoverageFrom": ["src/classes/*.{ts}", "!**/index.ts"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 49,
+      "functions": 83,
+      "lines": 90,
+      "statements": -10
+    }
+  },
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "testEnvironment": "node"
+}
+
