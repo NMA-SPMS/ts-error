@@ -1,5 +1,5 @@
 TN:
-SF:/Users/pwst211/Desktop/Projects/spms/ErrorHandler/src/classes/app-error.ts
+SF:/Users/pwst211/Desktop/Projects/spms/ts-error/src/classes/app-error.ts
 FN:6,(anonymous_0)
 FNF:1
 FNH:1
@@ -14,7 +14,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/pwst211/Desktop/Projects/spms/ErrorHandler/src/classes/error-handler.ts
+SF:/Users/pwst211/Desktop/Projects/spms/ts-error/src/classes/error-handler.ts
 FN:11,(anonymous_0)
 FN:21,(anonymous_1)
 FN:33,(anonymous_2)
@@ -48,7 +48,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:/Users/pwst211/Desktop/Projects/spms/ErrorHandler/src/classes/operational-error.ts
+SF:/Users/pwst211/Desktop/Projects/spms/ts-error/src/classes/operational-error.ts
 FN:6,(anonymous_0)
 FNF:1
 FNH:1
