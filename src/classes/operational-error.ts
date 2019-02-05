@@ -6,10 +6,7 @@ export default class OperationalError extends ErrorHandler {
     super(message);
     this.code = ErrorCodes.Operational;
     if (opCode) {
-      console.log('has code');
       this.statusCode = opCode;
-    } else {
-      console.log('no code');
     }
   }
 }
