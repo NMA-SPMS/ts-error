@@ -11,7 +11,7 @@ describe('Print Error - Test', () => {
       name: 'ApplicationError',
       message: 'Error 1',
       stack: [],
-      code: 600
+      code: 600,
     };
     try {
       ErrorHandler.prototype.printError = jest.fn().mockImplementationOnce(() => {

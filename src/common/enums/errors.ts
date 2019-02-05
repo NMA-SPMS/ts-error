@@ -1,4 +1,4 @@
 export const enum ErrorCodes {
   App = 600,
-  Operational = 700
+  Operational = 700,
 }

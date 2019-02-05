@@ -1,4 +1,3 @@
-
 import ApplicationError from '../../classes/app-error';
 import { ErrorHandler } from '../../classes/error-handler';
 import { ErrorCodes } from '../../common/enums/errors';

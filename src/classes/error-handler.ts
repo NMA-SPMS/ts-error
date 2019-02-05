@@ -1,7 +1,6 @@
 import { v4 } from 'uuid';
 
 export abstract class ErrorHandler extends Error {
-
   protected uid: string;
   protected timestamp: Date;
   protected stackMsg: string[];
@@ -26,7 +25,7 @@ export abstract class ErrorHandler extends Error {
       message: this.message,
       stack: this.stackMsg,
       code: this.code,
-      statusCode: this.statusCode
+      statusCode: this.statusCode,
     });
   }
 

@@ -1,4 +1,3 @@
-
 import OperationalError from '../../classes/operational-error';
 import { ErrorCodes } from '../../common/enums/errors';
 
