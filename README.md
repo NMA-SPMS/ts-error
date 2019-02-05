@@ -16,8 +16,8 @@ Installation is done using the npm install command:
 
 There are two types of error:
 
-1. **Application** Error - Bugs in the application.
-2. **Operational** Error - Run-time problems experienced by correctly-written programs;
+1. **Application**Error - Bugs in the application.
+2. **Operational**Error - Run-time problems experienced by correctly-written programs;
 
 All errors have a common set of properties:
 

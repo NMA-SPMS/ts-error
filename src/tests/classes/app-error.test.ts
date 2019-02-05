@@ -9,7 +9,6 @@ describe('App Error Class - Test', () => {
     try {
       throw new ApplicationError('Error 1');
     } catch (err) {
-      console.log(err);
       expect(err).toBeInstanceOf(Error);
       expect(err).toBeInstanceOf(ApplicationError);
       expect(err.name).toEqual(err.constructor.name);

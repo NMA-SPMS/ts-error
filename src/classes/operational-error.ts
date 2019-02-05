@@ -3,9 +3,14 @@ import { ErrorHandler } from './error-handler';
 
 export default class OperationalError extends ErrorHandler {
 
-  constructor(message: string, opCode: number) {
+  constructor(message: string, opCode?: number) {
     super(message);
     this.code = ErrorCodes.Operational;
-    this.statusCode = opCode;
+    if (opCode) {
+      console.log('has code');
+      this.statusCode = opCode;
+    } else {
+      console.log('no code');
+    }
   }
 }
