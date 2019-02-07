@@ -1,5 +1,5 @@
-import OperationalError from '../../classes/operational-error';
-import { ErrorCodes } from '../../common/enums/errors';
+import OperationalError from '../../src/classes/operational-error';
+import { ErrorCodes } from '../../src/common/enums/errors';
 
 describe('Operational Error Class - Test', () => {
   it('Constructor test with code', () => {

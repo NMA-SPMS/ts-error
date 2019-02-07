@@ -1,5 +1,8 @@
 # Spms Apps Typescript Custom Error
 
+[![Build Status](https://travis-ci.org/NMA-SPMS/ts-error.svg?branch=master)](https://travis-ci.org/NMA-SPMS/ts-error)
+<a href='https://coveralls.io/github/NMA-SPMS/ts-error?branch=master'><img src='https://coveralls.io/repos/github/NMA-SPMS/ts-error/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 A typescript error module, based on the Node.js Error object, which extends more properties and prints the error in Json object string.
 
 ## Instalation

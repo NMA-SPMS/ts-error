@@ -1,6 +1,6 @@
-import ApplicationError from '../../classes/app-error';
-import { ErrorHandler } from '../../classes/error-handler';
-import { IError } from '../../interfaces/error-handling';
+import ApplicationError from '../../src/classes/app-error';
+import { ErrorHandler } from '../../src/classes/error-handler';
+import { IError } from '../../src/interfaces/error-handling';
 
 describe('Print Error - Test', () => {
   it('PrintError test', () => {
@@ -20,9 +20,7 @@ describe('Print Error - Test', () => {
       const errorClass = new ApplicationError('Error 1');
       throw errorClass;
     } catch (err) {
-      // console.log(err);
       const jsonStr = err.printError();
-      console.log(jsonStr);
       expect(jsonStr).toBeDefined();
       expect(jsonStr).toEqual(JSON.stringify(appError));
     }
