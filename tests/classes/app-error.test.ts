@@ -1,7 +1,7 @@
-import ApplicationError from '../../classes/app-error';
-import { ErrorHandler } from '../../classes/error-handler';
-import { ErrorCodes } from '../../common/enums/errors';
-import { IError } from '../../interfaces/error-handling';
+import ApplicationError from '../../src/classes/app-error';
+import { ErrorHandler } from '../../src/classes/error-handler';
+import { ErrorCodes } from '../../src/common/enums/errors';
+import { IError } from '../../src/interfaces/error-handling';
 
 describe('App Error Class - Test', () => {
   it('Constructor test', () => {
