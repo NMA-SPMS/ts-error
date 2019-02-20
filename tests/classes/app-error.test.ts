@@ -1,5 +1,5 @@
-import ApplicationError from "../../src/classes/app-error";
-import { ErrorCodes } from "../../src/common/enums/errors";
+import ApplicationError from '../../src/classes/app-error';
+import { ErrorCodes } from '../../src/common/enums/errors';
 
 describe('App Error Class - Test', () => {
   it('Constructor test', () => {
