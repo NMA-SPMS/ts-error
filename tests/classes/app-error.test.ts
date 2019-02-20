@@ -1,7 +1,5 @@
 import ApplicationError from '../../src/classes/app-error';
-import { ErrorHandler } from '../../src/classes/error-handler';
 import { ErrorCodes } from '../../src/common/enums/errors';
-import { IError } from '../../src/interfaces/error-handling';
 
 describe('App Error Class - Test', () => {
   it('Constructor test', () => {
@@ -19,17 +17,3 @@ describe('App Error Class - Test', () => {
     }
   });
 });
-
-/*   it('Undefined stack test', () => {
-    try {
-      Error.captureStackTrace
-      Error.prototype.stack = jest.fn().mockReturnValueOnce(undefined);
-      console.log(new AppError('').stack);
-      const app = new AppError('Error 1');
-      console.log(app.stack);
-    } catch (err) {
-      // console.log(err.stack);
-      console.log(err);
-      // expect(jsonStr).toBeDefined(s);
-      // expect(jsonStr).toEqual(JSON.stringify(appError));
-    } */
