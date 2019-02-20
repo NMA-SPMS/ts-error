@@ -53,7 +53,7 @@ import ApplicationError, OperationalError from '@spms-apps/ts-error';
 
 throw new ApplicationError('The message..');
 // Output in catch:
-{ ApplicationError: The message..
+{ <ApplicationError Object>
           at method a
           (path a)
           at method b
@@ -65,16 +65,17 @@ throw new ApplicationError('The message..');
         uid: '0A',
         timestamp: 2019-01-31T16:05:23.700Z,
         stackMsg:
-         [ 'ApplicationError: Error 1',
-           at method a
-          (path a)
+         [ at method a
+          (path pa),
           at method b
-          (path b) ],
+          (path pb), 
+          at method c
+          (path pc)],
         code: 600 }
 
 throw new OperationalError('Http Bad request error message..', 400);
 // Output in catch:
-{ OperationalError: Http Bad request error message..
+{ <OperationalError Object>
           at method a
           (path a)
           at method b
